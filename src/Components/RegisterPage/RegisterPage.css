@@ -1,0 +1,19 @@
+.border{
+    background-color: gainsboro;
+    border-radius: 10px;
+    height: 400px;
+    width: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+input{
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+.loginButton{
+    margin-top: 10px;
+}

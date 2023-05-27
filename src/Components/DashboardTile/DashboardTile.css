@@ -1,0 +1,8 @@
+.tile{
+    background-color: gray ;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 5px;
+
+}

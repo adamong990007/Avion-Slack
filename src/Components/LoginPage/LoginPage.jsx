@@ -3,6 +3,8 @@ import slackLogo from './Slack_icon_2019.svg'
 import "./LoginPage.css";
 import { useState } from 'react';
 
+// API Documentation: https://gist.github.com/maurusrv/990fd96beb30272cbfd411ace222f355
+
 const LoginPage = () => {
     const [username, setUsername] = useState(null);
     const [password, setPassword] = useState(null);

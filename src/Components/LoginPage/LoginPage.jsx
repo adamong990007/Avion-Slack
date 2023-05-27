@@ -7,6 +7,7 @@ const LoginPage = () => {
     const [username, setUsername] = useState(null);
     const [password, setPassword] = useState(null);
 
+
     const submitLogin = (e) =>{
         e.preventDefault();
         console.log(username, password);
@@ -22,6 +23,7 @@ const LoginPage = () => {
           <label for="username">Username: </label>
           <input
             onChange={(e) => setUsername(e.target.value)}
+            value={username}
             id="username"
             type="text"></input>
         </div>
@@ -29,6 +31,7 @@ const LoginPage = () => {
           <label for="password"> Password: </label>
           <input
             onChange={(e) => setPassword(e.target.value)}
+            value = {password}
             id="password"
             type="password"></input>
         </div>

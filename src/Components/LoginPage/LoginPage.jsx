@@ -10,9 +10,20 @@ const LoginPage = () => {
     const [password, setPassword] = useState(null);
 
 
-    const submitLogin = (e) =>{
+    const submitLogin = async(e) =>{
         e.preventDefault();
         console.log(username, password);
+        
+        const response = await fetch('http:206.189.91.54/api/v1/auth/sign_in',{
+          headers:{
+            'Content-Type': 'application/json'
+          }
+        },
+        method: 'POST',
+        body: JSON.stringify({
+          email,
+          password,
+        }))
     }
     
   return (
